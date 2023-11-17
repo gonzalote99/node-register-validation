@@ -1,0 +1,30 @@
+html(lang="en")
+
+head 
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+    title sign-in 
+
+    body 
+
+        .container-fluid.w-50 
+           .card 
+                .card-header.bg-primary.py-4 
+                 form(name="sign-in" method="POST").m-3
+
+                  .form-group 
+                    label(for="name") name: 
+                    input(type="text" name="name").form-control#name 
+
+                  
+                  .form-group 
+                    label(for="password") password: 
+                    input(type="password" name="password").form-control#password  
+
+                  button(type="submit").btn.btn-primary submit 
+
+
+script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
+script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js")
+script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
